@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>小瑪莉</title>
+    <style>
+        .container {
+            width: 600px;
+            height: 400px;
+        }
+        
+
+        .row {
+            width: 600px;
+        }
+
+        #button-start {
+            width: 100%;
+        }
+
+        /* #i09 {
+            outline-style: solid;
+            outline-color: red;
+        } */
+
+        /* img { */
+        /* outline-style: solid;
+            outline-color: red; */
+        /* box-shadow: 2px 2px 2px 2px red; */
+        /* outline: none; */
+        /* outline-style: solid; */
+        /* outline-color: #dda0dd; */
+        /* box-shadow: #dda0dd 0 0 2px; */
+        /* } */
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-between mb-2">
+            <img id="i1" src="https://via.placeholder.com/75C/O https://placeholder.com/" class="rounded d-block "
+                alt="...">
+            <img id="i2" src="https://via.placeholder.com/75C/O https://placeholder.com/" class="rounded d-block"
+                alt="...">
+            <img id="i3" src="https://via.placeholder.com/75C/O https://placeholder.com/" class="rounded d-block"
+                alt="...">
+            <img id="i4" src="https://via.placeholder.com/75C/O https://placeholder.com/" class="rounded d-block"
+                alt="...">
+            <img id="i5" src="https://via.placeholder.com/75C/O https://placeholder.com/" class="rounded d-block"
+                alt="...">
+            <img id="i6" src="https://via.placeholder.com/75C/O https://placeholder.com/" class="rounded d-block"
+                alt="...">
+            <img id="i7" src="https://via.placeholder.com/75C/O https://placeholder.com/" class="rounded d-block"
+                alt="...">
+        </div>
+        <div class="row justify-content-between mb-2">
+            <img id="i20" src="https://via.placeholder.com/75C/O https://placeholder.com/" class="rounded d-block"
+                alt="...">
+            <img id="i8" src="https://via.placeholder.com/75C/O https://placeholder.com/" class="rounded d-block"
+                alt="...">
+        </div>
+        <div class="row justify-content-between mb-2">
+            <img id="i19" src="https://via.placeholder.com/75C/O https://placeholder.com/" class="rounded d-block"
+                alt="...">
+            <img id="i9" src="https://via.placeholder.com/75C/O https://placeholder.com/" class="rounded d-block"
+                alt="...">
+        </div>
+        <div class="row justify-content-between mb-2">
+            <img id="i18" src="https://via.placeholder.com/75C/O https://placeholder.com/" class="rounded d-block"
+                alt="...">
+            <img id="i10" src="https://via.placeholder.com/75C/O https://placeholder.com/" class="rounded d-block"
+                alt="...">
+        </div>
+        <div class="row justify-content-between mb-2">
+            <img id="i17" src="https://via.placeholder.com/75C/O https://placeholder.com/" class="rounded d-block "
+                alt="...">
+            <img id="i16" src="https://via.placeholder.com/75C/O https://placeholder.com/" class="rounded d-block"
+                alt="...">
+            <img id="i15" src="https://via.placeholder.com/75C/O https://placeholder.com/" class="rounded d-block"
+                alt="...">
+            <img id="i14" src="https://via.placeholder.com/75C/O https://placeholder.com/" class="rounded d-block"
+                alt="...">
+            <img id="i13" src="https://via.placeholder.com/75C/O https://placeholder.com/" class="rounded d-block"
+                alt="...">
+            <img id="i12" src="https://via.placeholder.com/75C/O https://placeholder.com/" class="rounded d-block"
+                alt="...">
+            <img id="i11" src="https://via.placeholder.com/75C/O https://placeholder.com/" class="rounded d-block"
+                alt="...">
+        </div>
+        <div>
+            <button id="button-start" onclick="choseone()" type="button"
+                class="btn btn-outline-danger mt-3">開始遊戲</button>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script>
+        // var bechosen = 1;
+        // function choseone() {
+        var number = Math.floor(Math.random() * 100 / 5) + Math.floor(Math.random() * 100 / 3);
+        var i = 1;
+        var j = 0;
+        // $("#i08").css({
+        //     "outline-style": "solid",
+        //     "outline-color": "red"
+        // });
+
+        // var tmr = setTimeout(sayHello, 3000);
+
+        function choseone() {
+            setTimeout(function () {
+                $("#i" + i).css({
+                    "outline-style": "solid",
+                    "outline-color": "red",
+                    "transition": "all 0s"
+                });
+                $("#i" + (i - 1)).css({
+                    "outline-style": "solid",
+                    "outline-color": "transparent",
+                    "transition": "all 0.3s"
+                });
+                i++;
+                j++;
+                if (j < number) {
+                    choseone();
+                }
+                else {
+                    number = Math.floor(Math.random() * 100 / 5) + 20;
+                    j = 0;
+                }
+                if (i == 21) {
+                    i = 1;
+                    $("#i20").css({
+                    "outline-style": "solid",
+                    "outline-color": "red",
+                    "transition": "all 0s"
+                });
+                setTimeout(function () {
+                    $("#i20").css({
+                        "outline-style": "solid",
+                        "outline-color": "transparent"
+                    });
+                },100);
+                }
+            }, 50);
+
+        };
+
+    </script>
+</body>
+
+</html>
